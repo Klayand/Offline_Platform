@@ -142,12 +142,6 @@ def train_and_save(train_path, username, model_name, model_params, robust_method
     elif model_name == 'LogisticRegression':
         clf = LogisticRegression()
 
-    else:
-        clf = lgbm.LGBMClassifier(random_state=66, metric='None', n_jobs=10, objective='multiclass', learning_rate=0.2,
-                                      reg_lambda=0.25, reg_alpha=0.3, is_unbalance=True, num_class=6, max_depth=-1,
-                                      num_leaves=25, min_child_weight=0.0015,
-                                      min_child_samples=14, feature_fraction=0.65, bagging_fraction=0.1,
-                                      n_estimators=int(100))
 
 
     if robust_method == 'AddRandomNoise':
