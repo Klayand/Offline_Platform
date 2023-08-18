@@ -258,10 +258,10 @@ class __login__:
         main_page_sidebar = st.sidebar.empty()
         with main_page_sidebar:
             selected_option = option_menu(
-                menu_title = 'Navigation/导航页',
+                menu_title = 'Navigation',
                 menu_icon = 'list-columns-reverse',
                 icons = ['box-arrow-in-right', 'person-plus', 'x-circle','arrow-counterclockwise'],
-                options = ['Login/登录', 'Create Account/创建账号', 'Forgot Password?/忘记密码?', 'Reset Password/密码重置'],
+                options = ['Login', 'Create Account', 'Forgot Password?', 'Reset Password'],
                 styles = {
                     "container": {"padding": "5px"},
                     "nav-link": {"font-size": "14px", "text-align": "left", "margin":"0px"}} )
