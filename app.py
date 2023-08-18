@@ -157,14 +157,14 @@ if LOGGED_IN == True:  # 如果登陆成功，才进行下面的过程
                     # num_iterations
                     parameters['num_iterations'] = st.number_input(
                         label='num_iterations', help='number of boosting iterations (>=0)',
-                        disabled=default, min_value=1, value=100
+                        disabled=default, format='%d', min_value=1, value=100
                     )
                 with col2:
                     # min_child_sample
                     parameters['min_data_in_leaf'] = st.number_input(
                         label='min_data_in_leaf',
                         help='minimal number of data in one leaf. Can be used to deal with over-fitting (>=0)',
-                        disabled=default, min_value=0, value=20
+                        disabled=default, min_value=0, value=20, format='%d'
                     )
                     # max_depth
                     parameters['max_depth'] = st.number_input(
@@ -175,7 +175,7 @@ if LOGGED_IN == True:  # 如果登陆成功，才进行下面的过程
                     # num_leaves
                     parameters['num_leaves'] = st.number_input(
                         label='num_leaves', help='max number of leaves in one tree (1< num_leaves <=131072)',
-                        disabled=default, min_value=2, max_value=131072, value=31
+                        disabled=default, min_value=2, max_value=131072, value=31, format='%d'
                     )
                     # bagging_fraction
                     parameters['bagging_fraction'] = st.number_input(
