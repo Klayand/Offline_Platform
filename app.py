@@ -478,8 +478,8 @@ if LOGGED_IN == True:  # 如果登陆成功，才进行下面的过程
         st.sidebar.success("Training data uploaded successfully!")
         # 保存上传的训练数据到当前目录
         save_path_train = os.path.join(script_dir, 'users\\{}\\data'.format(username), 'train.csv')
-        # if not os.path.exists(os.path.join(script_dir, 'users\\{}\\data'.format(username))):
-        #     os.makedirs(os.path.join(script_dir, 'users\\{}\\data'.format(username)))
+        if not os.path.exists(os.path.join(script_dir, 'users\\{}\\data'.format(username))):
+            os.makedirs(os.path.join(script_dir, 'users\\{}\\data'.format(username)))
         with open(save_path_train, 'wb') as f:
             f.write(uploaded_training_data.getbuffer())
 
