@@ -161,8 +161,8 @@ def train_and_save(train_path, username, model_name, model_params, robust_method
 
     clf, metrics = evaluate_multiclass_model(clf, X, Y)
 
-    # if not os.path.exists('./users/{}/models'.format(username)):  # 如果没有models文件夹，则创建文件夹
-    #     os.makedirs('./users/{}/models'.format(username))
+    if not os.path.exists('./users/{}/models'.format(username)):  # 如果没有models文件夹，则创建文件夹
+        os.makedirs('./users/{}/models'.format(username))
 
     model_path = './users/{}/models/{}_model.pkl'.format(username, model_name)
     joblib.dump(clf, model_path)
