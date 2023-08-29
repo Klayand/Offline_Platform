@@ -414,8 +414,9 @@ if LOGGED_IN == True:  # 如果登陆成功，才进行下面的过程
     # -------------------------  创建头部导航容器  -------------------------
     header_container = st.container()
     with header_container:
-        st.markdown("## 分布式系统故障诊断系统")
-        # st.write("欢迎来到分布式系统的故障诊断系统在线训练软件！")
+        # st.markdown("## 分布式系统诊断系统")
+        st.markdown("## 分布式医疗诊断系统")
+        # st.write("欢迎来到分布式医疗诊断系统在线训练软件！")
         # 在这里添加其他导航元素，如链接、按钮等
 
         # 添加visualization_option
