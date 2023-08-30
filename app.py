@@ -463,7 +463,7 @@ if LOGGED_IN == True:  # 如果登陆成功，才进行下面的过程
     sidebar = st.sidebar
     # 添加图片到侧边栏最上方
     _, col, _ = sidebar.columns([1] + [4] + [1])
-    image_path = './imgs/bit.png'
+    image_path = './imgs/healyou.png'
     col.image(image_path, use_column_width=True)
 
     # -------------------------  训练  -------------------------
