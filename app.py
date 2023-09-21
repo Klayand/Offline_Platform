@@ -414,8 +414,8 @@ if LOGGED_IN == True:  # 如果登陆成功，才进行下面的过程
     # -------------------------  创建头部导航容器  -------------------------
     header_container = st.container()
     with header_container:
-        # st.markdown("## 分布式系统诊断系统")
-        st.markdown("## 分布式医疗诊断系统")
+        # st.markdown("## 分布式系统故障诊断系统")
+        st.markdown("## 分布式系统故障诊断系统")
         # st.write("欢迎来到分布式医疗诊断系统在线训练软件！")
         # 在这里添加其他导航元素，如链接、按钮等
 
@@ -463,7 +463,7 @@ if LOGGED_IN == True:  # 如果登陆成功，才进行下面的过程
     sidebar = st.sidebar
     # 添加图片到侧边栏最上方
     _, col, _ = sidebar.columns([1] + [4] + [1])
-    image_path = './imgs/healyou.png'
+    image_path = './imgs/bit.png'
     col.image(image_path, use_column_width=True)
 
     # -------------------------  训练  -------------------------
